@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int bissextile (int annee)
+
+{
+  return annee % 4 && !annee % 100 || annee %400;  
+}
+
+int main (int argc, char* argv[])
+
+{
+  int annee = atoi(argv[2]);
+    printf :"L'annee %d est %s bissextile", annee, bissextile(annee));
+  return 0;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+void table (void)
+{
+  
+   printf ("Caractère Décimal Hexa, Octal\n"); 
+  int i =32;
+  while (i<127)
+    {
+      printf ("%c %d 0x%x %o\n",i,i,i,i);
+      i=i+1;
+    }
+ }
+      
+int main(int argc, char* argv[])
+{
+
+  table();
+  return 0;
+}
